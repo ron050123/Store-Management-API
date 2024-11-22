@@ -5,21 +5,21 @@ import { StoreService } from './store.service';
 export class StoreController {
   constructor(private readonly storeService: StoreService) {}
 
-  // 1. Register Store Owner
   @Post('register-owner')
   async registerOwner(@Body() body) {
+    console.log('Accessing registerOwner method');
     return this.storeService.registerOwner(body);
   }
 
-  // 2. Add Store
   @Post('add-store')
   async addStore(@Body() body) {
+    console.log('Accessing addStore method');
     return this.storeService.addStore(body);
   }
 
-  // 3. Register Freelancer
   @Post('register-freelancer')
   async registerFreelancer(@Body() body) {
+    console.log('Accessing registerFreelancer method');
     return this.storeService.registerFreelancer(body);
   }
 }

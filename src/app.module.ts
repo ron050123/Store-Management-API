@@ -12,7 +12,7 @@ import { StoreModule } from './store/store.module';
       password: '1234',
       database: 'store_management',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: true, // Không dùng trong production
+      synchronize: true,
     }),
     StoreModule,
   ],
